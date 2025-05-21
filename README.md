@@ -46,12 +46,6 @@ Save and Share
 Save your outfit to the wardrobe (up to 5 outfits).  
 Share your look on X with hashtags like #F1Style.
 
-
-
-
-🎥 Demo
-Add a GIF or screenshot of the app in action here.For now, here’s a placeholder:
-
 🌟 Features in Action
 
 Team Colors: 8 vibrant colors like Ferrari Red, Alpine Pink, and Aston Martin Green.  
