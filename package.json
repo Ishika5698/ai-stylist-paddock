@@ -1,0 +1,16 @@
+{
+  "name": "ai-stylist-paddock",
+  "version": "1.0.0",
+  "main": "data.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}

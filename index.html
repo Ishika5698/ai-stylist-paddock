@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Stylist for the Paddock</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>AI Stylist for the Paddock</h1>
+    <form id="styleForm">
+      <label for="vibe">Race Vibe:</label>
+      <select id="vibe" name="vibe" required>
+        <option value="australia">Australia</option>
+        <option value="china">China</option>
+        <option value="japan">Japan</option>
+        <option value="bahrain">Bahrain</option>
+        <option value="saudiarabia">Saudi Arabia</option>
+        <option value="miami">Miami</option>
+        <option value="imola">Imola</option>
+        <option value="monaco">Monaco</option>
+        <option value="spain">Spain</option>
+        <option value="canada">Canada</option>
+        <option value="austria">Austria</option>
+        <option value="silverstone">Silverstone</option>
+        <option value="belgium">Belgium</option>
+        <option value="hungary">Hungary</option>
+        <option value="netherlands">Netherlands</option>
+        <option value="monza">Monza</option>
+        <option value="azerbaijan">Azerbaijan</option>
+        <option value="singapore">Singapore</option>
+        <option value="usa">USA</option>
+        <option value="mexico">Mexico</option>
+        <option value="brazil">Brazil</option>
+        <option value="lasvegas">Las Vegas</option>
+        <option value="qatar">Qatar</option>
+        <option value="abudhabi">Abu Dhabi</option>
+        <option value="academy_shanghai">F1 Academy: Shanghai</option>
+        <option value="academy_miami">F1 Academy: Miami</option>
+        <option value="academy_barcelona">F1 Academy: Barcelona</option>
+      </select>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="driver">Driver Inspiration:</label>
+      <select id="driver" name="driver">
+        <option value="none">None</option>
+        <option value="albon">Alex Albon</option>
+        <option value="alonso">Fernando Alonso</option>
+        <option value="anagnostiadis">Aiva Anagnostiadis</option>
+        <option value="antonelli">Andrea Kimi Antonelli</option>
+        <option value="bearman">Oliver Bearman</option>
+        <option value="block">Lia Block</option>
+        <option value="bortoleto">Gabriel Bortoleto</option>
+        <option value="bustamante">Bianca Bustamante</option>
+        <option value="chadwick">Jamie Chadwick</option>
+        <option value="chambers">Chloe Chambers</option>
+        <option value="chong">Chloe Chong</option>
+        <option value="colapinto">Franco Colapinto</option>
+        <option value="crone">Courtney Crone</option>
+        <option value="felbermayr">Emma Felbermayr</option>
+        <option value="ferreira">Rafaela Ferreira</option>
+        <option value="gademan">Nina Gademan</option>
+        <option value="gasly">Pierre Gasly</option>
+        <option value="hadjar">Isack Hadjar</option>
+        <option value="hamilton">Lewis Hamilton</option>
+        <option value="hausmann">Tina Hausmann</option>
+        <option value="havrda">Nicole Havrda</option>
+        <option value="hulkenberg">Nico Hulkenberg</option>
+        <option value="larsen">Alba Larsen</option>
+        <option value="lawson">Liam Lawson</option>
+        <option value="leclerc">Charles Leclerc</option>
+        <option value="lloyd">Ella Lloyd</option>
+        <option value="norris">Lando Norris</option>
+        <option value="nobels">Aurelia Nobels</option>
+        <option value="ocon">Esteban Ocon</option>
+        <option value="palmowski">Alisha Palmowski</option>
+        <option value="piastri">Oscar Piastri</option>
+        <option value="pin">Doriane Pin</option>
+        <option value="russell">George Russell</option>
+        <option value="sainz">Carlos Sainz</option>
+        <option value="shi">Wei Shi</option>
+        <option value="stroll">Lance Stroll</option>
+        <option value="tsunoda">Yuki Tsunoda</option>
+        <option value="verstappen">Max Verstappen</option>
+        <option value="weug">Maya Weug</option>
+      </select>
+
+      <label for="teamColor">Team Color:</label>
+      <input type="color" id="teamColor" name="teamColor" value="#ff0000">
+      <div id="colorSwatch"></div>
+
+      <button type="submit">Get Outfit</button>
+      <button type="button" id="randomBtn">Surprise Me</button>
+    </form>
+
+    <div id="shirtPreview"></div>
+    <div id="result"></div>
+    <div id="loading" style="display: none;">Generating...</div>
+
+    <button id="raceInfoBtn">Race Info</button>
+    <button id="shareBtn">Share to X</button>
+    <button id="saveOutfitBtn">Save to Wardrobe</button>
+    <button id="viewWardrobeBtn">View Wardrobe</button>
+    <button id="recentOutfitsBtn">View Recent Outfits</button>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="modalClose" class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
